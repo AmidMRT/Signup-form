@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    text-decoration-line: none;
+    font-size: 14px;
+}
+
+input {
+    border: none;
+    border-bottom: 2px dotted gray;
+}
+
+body {
+    display: flex;
+    margin: 0 auto;
+    height: 100vh;
+    width: 75vw;
+}
+
+header {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+h4 {
+    /* height: 30vh; */
+    /* background-color: azure; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.split-left {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40vw;
+    /* border: 1px solid red; */
+}
+
+.split-right {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.form-container {
+    /* background-color:rgb(214, 214, 214); */
+    height: 30vh;
+    box-shadow: 10px 10px 10px rgba(151, 151, 151, 0.349);
+}
+
+.allnames,.contacts,.security {
+    display: flex;
+    justify-content:flex-start;
+    margin: 0;
+    margin-top: 8px;
+}
+
+form div {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+p {
+    padding-left: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: gray;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: rgb(253, 63, 63);
+}
+
+.signin-section {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+input:user-invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+a:hover {
+    background-color: gray;
+    color: whitesmoke;
+}
