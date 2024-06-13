@@ -13,18 +13,23 @@ input {
     border-bottom: 2px dotted gray;
 }
 
-body {
+.main-content {
     display: flex;
-    margin: 0 auto;
-    height: 100vh;
+    margin: -50px auto;
+    height: 80vh;
     width: 75vw;
+}
+
+.mainstr{
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     text-align: center;
-    font-size: large;
+    font-size:xx-large;
     font-weight: bold;
-    margin: 0 auto;
+    margin: 50px auto 0;
 }
 
 h4 {
@@ -33,20 +38,21 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .split-left {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 40vw;
+    width: 25vw;
     /* border: 1px solid red; */
 }
 
 .split-right {
-    width: 60vw;
     display: flex;
     flex-direction: column;
+    align-items:flex-start;
     justify-content: center;
     /* border: 1px solid red; */
 }
@@ -54,7 +60,7 @@ h4 {
 .form-container {
     /* background-color:rgb(214, 214, 214); */
     height: 30vh;
-    box-shadow: 10px 10px 10px rgba(151, 151, 151, 0.349);
+    box-shadow: 8px 0 10px 8px rgba(151, 151, 151, 0.349);
 }
 
 .allnames,.contacts,.security {
@@ -79,15 +85,28 @@ button {
     background-color: gray;
     color: whitesmoke;
     font-weight: 600;
+    /* border: red; */
+    border: 2px solid gray;
+    border-radius: 7px;
+    box-shadow: 2px 3px rgba(0,0,0,0.24);
 }
 
 button:hover {
-    background-color: rgb(253, 63, 63);
+    background-color: rgba(211, 34, 34, 0.822);
+    border: 2px solid rgba(211, 34, 34, 0.822);
+}
+
+button:active { 
+    transform: scale(0.98); 
+    /* Scaling button to 0.98 to its original size */ 
+    box-shadow: 3px 4px rgba(0,0,0,0.24);
+    /* Lowering the shadow */ 
 }
 
 .signin-section {
     margin-left: 20px;
     margin-top: 20px;
+    margin-right: 20px ;
 }
 
 input:user-invalid {
@@ -102,4 +121,10 @@ input:focus {
 a:hover {
     background-color: gray;
     color: whitesmoke;
+}
+
+footer {
+    font-size: small;
+    display: flex;
+    justify-content: center;
 }
